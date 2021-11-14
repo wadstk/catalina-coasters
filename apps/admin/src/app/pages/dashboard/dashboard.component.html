@@ -1,0 +1,54 @@
+<div class="admin-page">
+    <p-card header="Dashboard" subheader = "Latest Updates">
+        <div class="grid">
+            <div class="col-3">
+                <p-card styleClass="d-orders" routerLink='/orders'>
+                    <div class="d-item">
+                        <div>
+                            <i class="pi pi-shopping-cart"></i><br />
+                            <span class="name">Orders</span>
+                        </div>
+                        <span class="number">{{numOrders}}</span>
+                    </div>
+                </p-card>
+            </div>
+
+            <div class="col-3">
+                <p-card styleClass="d-orders" routerLink='/products'>
+                    <div class="d-item">
+                        <div>
+                            <i class="pi pi-briefcase"></i><br />
+                            <span class="name">Products</span>
+                        </div>
+                        <span class="number">{{numProducts}}</span>
+                    </div>
+                </p-card>
+            </div>
+
+            <div class="col-3">
+                <p-card styleClass="d-orders" routerLink='/users'>
+                    <div class="d-item">
+                        <div>
+                            <i class="pi pi-users"></i><br />
+                            <span class="name">Users</span>
+                        </div>
+                        <span class="number">{{numUsers}}</span>
+                    </div>
+                </p-card>
+            </div>
+
+            <div class="col-3">
+                <p-card styleClass="d-orders">
+                    <div class="d-item">
+                        <div>
+                            <i class="pi pi-dollar"></i><br />
+                            <span class="name">Tot Sales</span>
+                        </div>
+                        <span class="number" *ngIf="numSales">{{numSales | currency}}</span>
+                        <span class="number" *ngIf="!numSales">{{0 | currency}}</span>
+                    </div>
+                </p-card>
+            </div>
+        </div>
+    </p-card>
+</div>
