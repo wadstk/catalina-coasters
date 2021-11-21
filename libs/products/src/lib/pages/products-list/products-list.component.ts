@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CategoriesService, Category, Product, ProductsService } from '@catalina-coasters/products';
+import { ProductsService } from '../../services/products.service';
+import { CategoriesService} from '../../services/categories.service';
+import { Product } from '../../models/products';
+import { Category } from '../../models/category';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

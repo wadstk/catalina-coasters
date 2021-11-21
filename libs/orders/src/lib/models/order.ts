@@ -1,8 +1,8 @@
-import { OrderItem } from './order-item';
+
 
 export class Order {
     id?: string;
-    orderItems?: OrderItem[];
+    orderItems?: any[];
     shippingAddress1?: string;
     shippingAddress2?: string;
     city?: string;

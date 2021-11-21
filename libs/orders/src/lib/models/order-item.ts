@@ -1,6 +1,6 @@
-import {Product} from '@catalina-coasters/products';
+
 
 export class OrderItem {
-    product?: Product;
+    product?: string;
     quantity?: number;
 }

@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsersService} from '@catalina-coasters/users';
 import { Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
+//import { takeUntil } from 'rxjs/operators';
 import { Cart} from '../../models/cart';
 import { OrdersService, } from '../../services/orders.service';
 import { CartService, } from '../../services/cart.service';
@@ -29,7 +29,7 @@ export class CheckoutPageComponent implements OnInit, OnDestroy {
   checkoutFormGroup: FormGroup;
   isSubmitted = false;
   orderItems: any[] = [];
-  userId : string; //"6185a938356a0dbc496d849b";
+  userId : "6185a938356a0dbc496d849b"; //guest
   countries = [];
   unsubscribe$ : Subject<any> = new Subject();
 
@@ -38,7 +38,7 @@ export class CheckoutPageComponent implements OnInit, OnDestroy {
     this._initCheckoutForm();
     this._getCartItems();
     this._getCountries();
-    this._autoFillUserData();
+    //this._autoFillUserData();
   }
 
   ngOnDestroy(): void {
@@ -105,7 +105,7 @@ export class CheckoutPageComponent implements OnInit, OnDestroy {
     });
   }
 
-  private _autoFillUserData() {
+/*   private _autoFillUserData() {
     this.usersService
       .observeCurrentUser()
       .pipe(takeUntil(this.unsubscribe$))
@@ -123,7 +123,7 @@ export class CheckoutPageComponent implements OnInit, OnDestroy {
         }
 
     });
-  }
+  } */
 
   get checkoutForm() {
     return this.checkoutFormGroup.controls;

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../../models/products';
-import { CartService} from '../../../../../orders/src/lib/services/cart.service';
-import { CartItem } from '../../../../../orders/src/lib/models/cart';
+import { CartService} from '@catalina-coasters/orders';
+import { CartItem } from '@catalina-coasters/orders';
 import { MessageService } from 'primeng/api';
 
 
