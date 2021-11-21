@@ -1,14 +1,12 @@
 
 import { Injectable } from '@angular/core';
-import { UsersService } from '@catalina-coasters/users';
+import { UsersService } from '../services/users.service';
 import { createEffect, Actions, ofType } from '@ngrx/effects';
-import { fetch } from '@nrwl/angular';
 import { of} from 'rxjs';
 import { catchError, concatMap, map } from 'rxjs/operators';
 import { LocalstorageService } from '../services/localstorage.service';
 
 import * as UsersActions from './users.actions';
-import * as UsersFeature from './users.reducer';
 
 @Injectable()
 export class UsersEffects {

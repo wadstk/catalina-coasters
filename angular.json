@@ -234,7 +234,7 @@
             "sourceRoot": "libs/orders/src",
             "prefix": "orders",
             "architect": {
-                "build": {
+/*                 "build": {
                     "builder": "@nrwl/angular:ng-packagr-lite",
                     "outputs": ["dist/libs/orders"],
                     "options": {
@@ -249,7 +249,7 @@
                         }
                     },
                     "defaultConfiguration": "production"
-                },
+                }, */
                 "test": {
                     "builder": "@nrwl/jest:jest",
                     "outputs": ["coverage/libs/orders"],
@@ -316,7 +316,7 @@
             "sourceRoot": "libs/users/src",
             "prefix": "users",
             "architect": {
-                "build": {
+/*                 "build": {
                     "builder": "@nrwl/angular:ng-packagr-lite",
                     "outputs": ["dist/libs/users"],
                     "options": {
@@ -331,7 +331,7 @@
                         }
                     },
                     "defaultConfiguration": "production"
-                },
+                }, */
                 "test": {
                     "builder": "@nrwl/jest:jest",
                     "outputs": ["coverage/libs/users"],

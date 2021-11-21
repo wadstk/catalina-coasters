@@ -1,6 +1,6 @@
-import { User } from '@catalina-coasters/users';
+import { User } from '../models/user';
 import { createAction, props } from '@ngrx/store';
-import { UsersEntity } from './users.models';
+
 
 export const buildUserSession = createAction('[Users] Build User Session');
 
