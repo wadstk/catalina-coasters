@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiURL: "https://catalina-coasters-backend.herokuapp.com"
+    apiURL: "https://catalina-coasters-backend.herokuapp.com/"
 };
